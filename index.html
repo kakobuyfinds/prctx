@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>KakoBuy spreadsheet – kategorier, storlekar och köpguide</title>
+  <meta name="description" content="Utforska KakoBuy spreadsheet på svenska. Hitta kategorier på cafans.com och läs om storlekar, QC-bilder, material och vad du bör kontrollera före köp.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#182b46">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:title" content="KakoBuy spreadsheet – välj med bättre underlag">
+  <meta property="og:description" content="En svensk kategoriguide med konkreta råd om passform, material och produktbilder. Utforska vidare på cafans.com.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1695073621086-aa692bc32a3d?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <!-- index.html. Ange sidans egen absoluta canonical-adress först när publiceringsadressen är känd. -->
+  <!-- Sökunderlag: tio organiska webbträffar för KakoBuy spreadsheet; Googles egen resultatsida gick inte att läsa, så placeringar på Googles förstasida är inte verifierade.
+  spreadsheetkakobuy.com: kategorier, Weidian, Taobao, QC, kostnadsjämförelse.
+  kakobuyspreadsheet.gg: kategorinavigering, produktfynd, huvtröjor, sneakers.
+  kakobuychinaspreadsheet.com: produktlänkar, säljarpris, QC-bilder (sökutdrag; direktåtkomst misslyckades).
+  kakobuy2027spreadsheet.com: kategorier, köparfrågor, QC-arkiv.
+  spreadsheet.today: nybörjarguide, kalkylblad, skor, kläder.
+  kakobuya.com: kategorier, organiserade produktlistor (sökutdrag; direktåtkomst misslyckades).
+  kakobuyspreadsheetfinder.com/spreadsheet: produktsökning, filter, storlekar, QC.
+  thekakobuysheet.com: köpguider, produktbilder, beslutsunderlag.
+  spreadsheetskakobuy.com: skor, huvtröjor, accessoarer, produktlistor.
+  thekakobuyspreadsheet.com: Weidian, produktfynd, kategorier, kläder.
+  Sekundära ämnen: KakoBuy finds; KakoBuy storleksguide; KakoBuy QC-guide; KakoBuy köpguide.
+  Inga externa produktantal, betyg, rabatter eller leveranslöften återges. -->
+  <style>
+    :root{color-scheme:light;--paper:#f7f4ec;--ink:#182b46;--muted:#526071;--line:#d9d9d1;--red:#ad302d;--white:#fffefa;--soft:#e9edf1}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
+    a{color:inherit;text-underline-offset:4px}
+    a:hover{color:var(--red)}
+    a:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offset:5px}
+    img{display:block;width:100%;height:auto;background:var(--soft)}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.12}
+    h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:500}
+    h1{font-size:clamp(2.8rem,6.4vw,5.8rem);letter-spacing:-.055em}
+    h2{font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.035em}
+    h3{font-size:1.2rem}
+    p+p{margin-top:1rem}
+    .wrap{max-width:1240px;margin:auto;padding:0 28px}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:23px 0;border-bottom:1px solid var(--ink)}
+    .logo{font-weight:850;font-size:1.4rem;letter-spacing:-.06em;text-decoration:none}
+    .edition,.eyebrow{font-size:.73rem;font-weight:750;letter-spacing:.15em;text-transform:uppercase}
+    .edition{color:var(--muted)}
+    .toplink{font-size:.86rem;font-weight:650}
+    .category-section{padding:23px 0 28px}
+    .category-head{display:flex;justify-content:space-between;gap:15px;margin-bottom:12px;font-size:.8rem}
+    .categories{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-left:1px solid var(--line);border-top:1px solid var(--line)}
+    .categories a{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:61px;padding:12px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-decoration:none;font-size:.82rem;font-weight:650;background:var(--white)}
+    .categories a:hover{background:var(--ink);color:white}
+    .categories span{font-size:1rem;color:var(--red)}
+    .hero{display:grid;grid-template-columns:1.08fr 1fr;gap:38px;align-items:center;padding:26px 0 46px}
+    .eyebrow{color:var(--red);margin-bottom:19px}
+    .hero h1 span{font-style:italic}
+    .lead{font-size:1.08rem;color:var(--muted);max-width:53ch;margin-top:24px}
+    .button{display:inline-flex;gap:22px;align-items:center;justify-content:center;text-decoration:none;background:var(--ink);color:white;padding:15px 21px;margin-top:25px;font-weight:650;border:1px solid var(--ink)}
+    .button:hover{background:var(--red);border-color:var(--red);color:white}
+    .hero figure{position:relative}
+    .hero img{aspect-ratio:1/1;object-fit:cover}
+    .hero figcaption{padding:12px 0;border-bottom:1px solid var(--line);font-size:.75rem;color:var(--muted)}
+    .note{font-size:.8rem;color:var(--muted);margin-top:16px;max-width:58ch}
+    .intro{display:grid;grid-template-columns:1fr 2fr;gap:40px;padding:28px 0;border-block:1px solid var(--ink)}
+    .intro h2{font-size:1.8rem}
+    .intro p{max-width:80ch}
+    .section{padding:58px 0}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:28px}
+    .section-head p{max-width:40ch;color:var(--muted);font-size:.93rem}
+    .features{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+    .feature{background:var(--white);border:1px solid var(--line)}
+    .feature img{aspect-ratio:16/10;object-fit:cover}
+    .feature-content{padding:24px}
+    .feature-content p{color:var(--muted);margin-top:13px}
+    .feature-content a{display:inline-block;margin-top:17px;font-weight:650;font-size:.9rem}
+    .caption{font-size:.74rem!important}
+    .guides{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+    .guide{border-top:3px solid var(--ink);padding-top:20px}
+    .number{font:italic 2.3rem Georgia,serif;color:var(--red);display:block;margin-bottom:15px}
+    .guide h3{font-size:1.3rem}
+    .guide p{font-size:.95rem;color:var(--muted);margin-top:15px}
+    .guide ul{padding-left:19px;font-size:.9rem}
+    .guide li{margin:8px 0}
+    .table-wrap{overflow-x:auto;border:1px solid var(--line);background:var(--white);margin-top:25px}
+    table{border-collapse:collapse;min-width:620px;width:100%;font-size:.91rem}
+    caption{text-align:left;font-weight:700;padding:18px}
+    th,td{text-align:left;padding:16px 19px;border-top:1px solid var(--line);vertical-align:top}
+    thead{background:var(--soft)}
+    th{font-weight:700}
+    tbody th{width:22%}
+    .reading{display:grid;grid-template-columns:1.2fr 1fr;gap:45px;background:var(--ink);color:var(--paper);padding:38px}
+    .reading h2{font-size:2.3rem}
+    .reading p{margin-top:18px;color:#dce2e9}
+    .reading ol{padding-left:20px;margin:0}
+    .reading li{padding:8px 0}
+    .reading .eyebrow{color:#f6aca2}
+    .faq{display:grid;grid-template-columns:.8fr 1.4fr;gap:50px}
+    .faq-intro p{color:var(--muted);margin-top:19px}
+    details{border-bottom:1px solid var(--line);padding:19px 0}
+    details:first-child{border-top:1px solid var(--line)}
+    summary{font-weight:700;cursor:pointer;line-height:1.5}
+    details p{margin-top:14px;color:var(--muted);font-size:.95rem}
+    .closing{padding:35px 0;border-top:1px solid var(--ink);display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .closing h2{font-size:2rem}
+    .closing .button{margin:0;flex-shrink:0}
+    footer{padding:25px 0 35px;border-top:1px solid var(--line);color:var(--muted);font-size:.76rem}
+    .footer-row{display:flex;justify-content:space-between;gap:25px}
+    footer p{max-width:90ch;margin-top:14px}
+    @media(min-width:900px){
+      .deferred{content-visibility:auto;contain-intrinsic-size:auto 650px}
+    }
+    @media(max-width:900px){
+      .edition{display:none}
+      .categories{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .hero{gap:25px}
+      .guides{grid-template-columns:1fr}
+      .guide{display:block}
+      .faq{grid-template-columns:1fr;gap:25px}
+      .section-head{align-items:start}
+      .intro{grid-template-columns:1fr;gap:15px}
+    }
+    @media(max-width:600px){
+      .wrap{padding:0 19px}
+      .topbar{padding:18px 0}
+      .logo{font-size:1.25rem}
+      .toplink{font-size:.76rem}
+      .categories{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .category-section{padding-bottom:12px}
+      .category-head{font-size:.72rem}
+      .hero{grid-template-columns:1fr;padding-top:23px;gap:30px}
+      .hero img{aspect-ratio:6/5}
+      .hero h1{font-size:3.3rem}
+      .section{padding:39px 0}
+      .section-head{display:block}
+      .section-head p{margin-top:17px}
+      .features,.reading{grid-template-columns:1fr}
+      .reading{padding:26px;gap:24px}
+      .features{gap:20px}
+      .closing,.footer-row{display:block}
+      .closing .button{margin-top:20px}
+      .footer-row span{display:block;margin-top:9px}
+      .feature-content{padding:21px}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "name":"KakoBuy spreadsheet – kategorier, storlekar och köpguide",
+        "inLanguage":"sv",
+        "description":"En oberoende svensk guide till kategorier, storlekar, material och QC-bilder med länkar till cafans.com.",
+        "about":{"@type":"Thing","name":"KakoBuy spreadsheet"}
+      },
+      {
+        "@type":"Article",
+        "headline":"KakoBuy storleksguide: mått före bokstav",
+        "inLanguage":"sv",
+        "author":{"@type":"Organization","name":"Redaktionen för denna köpguide"},
+        "description":"Mät ett plagg du redan använder och jämför måtten med säljarens tabell.",
+        "articleBody":"En storleksbokstav räcker sällan som beslutsunderlag. Mät ett plagg du redan använder och jämför måtten med säljarens tabell. Kontrollera hur måtten har tagits. För skor är fotlängd och modellens storlekstabell en bättre utgångspunkt än enbart EU-numret."
+      },
+      {
+        "@type":"Article",
+        "headline":"KakoBuy QC-guide: läs bilden i rätt ordning",
+        "inLanguage":"sv",
+        "author":{"@type":"Organization","name":"Redaktionen för denna köpguide"},
+        "description":"Kontrollera variant, mått och detaljer när du granskar produktbilder.",
+        "articleBody":"QC betyder kvalitetskontroll. Börja med att kontrollera att bilderna avser rätt vara och variant. Titta sedan på mått, sömmar, sulor och synliga skador. Be om en närbild om en viktig detalj är otydlig. En bild räcker inte för att fastställa äkthet."
+      },
+      {
+        "@type":"FAQPage",
+        "inLanguage":"sv",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"Vad är en KakoBuy spreadsheet?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"En KakoBuy spreadsheet är en organiserad lista med produktlänkar som kan hjälpa dig att hitta och jämföra varor. Den här sidan är en svensk kategoriguide, inte ett nedladdningsbart kalkylblad. Kategorierna leder till cafans.com."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Går länkarna direkt till KakoBuy?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Nej. Kategorilänkarna öppnar respektive kategori på cafans.com. Övriga länkar går till https://www.cafans.com. Kontrollera produktinformationen och eventuella fortsatta köpsteg där."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Hur väljer jag rätt storlek?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Jämför säljarens mått med ett plagg du redan använder. För skor: mät fotlängden och läs modellens storlekstabell. Om mått saknas behöver du mer information innan du bestämmer dig."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Är produktbilder samma sak som QC-bilder?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Nej. Produktbilder visar hur en vara presenteras. QC-bilder bör visa det specifika exemplar som kontrollerats. Kontrollera bildens sammanhang och begär detaljer vid behov; bilder ensamma bevisar inte äkthet."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Hur jämför jag den totala kostnaden?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Jämför varupris, eventuella tjänsteavgifter, frakt och tillämpliga skatter eller importavgifter. Kontrollera aktuella villkor hos den tjänst du använder. Den här sidan visar inga priser eller leveranslöften."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Är sidan officiellt kopplad till KakoBuy eller märkena?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Nej. Detta är en oberoende informationssida. Varumärken nämns för identifiering och stilreferens. Bilderna är inspiration och intygar varken lagerstatus, äkthet eller tillgänglighet på cafans.com."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/prctx/">
+</head>
+<body>
+  <header class="wrap">
+    <div class="topbar">
+      <a class="logo" href="https://www.cafans.com">cafans.com</a>
+      <span class="edition">Stilanteckningar / Svensk köpguide</span>
+      <a class="toplink" href="https://www.cafans.com">Utforska katalogen ↗</a>
+    </div>
+    <nav class="category-section" aria-label="Produktkategorier på cafans.com">
+      <div class="category-head">
+        <strong>Börja med en kategori</strong>
+        <span>Alla kategorier öppnas på cafans.com</span>
+      </div>
+      <div class="categories">
+        <a href="https://cafans.com/category-911-Shoes.html" lang="en">Shoes <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-912-Hoodies%2FSweaters.html" lang="en">Hoodies/Sweaters <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-913-T-Shirts.html" lang="en">T-Shirts <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-914-Jackets.html" lang="en">Jackets <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-915-Pants%2FShorts.html" lang="en">Pants/Shorts <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-916-Headwear.html" lang="en">Headwear <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-917-Sets.html" lang="en">Sets <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-918-underwear%2Funderpants.html" lang="en">Underwear/underpants <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-919-Jersey.html" lang="en">Jersey <span aria-hidden="true">↗</span></a>
+        <a href="https://cafans.com/category-920-Accessories.html" lang="en">Accessories <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">Ett genomtänkt urval börjar med rätt frågor</p>
+        <h1 id="page-title">KakoBuy spreadsheet.<br><span>Din stil, med eftertanke.</span></h1>
+        <p class="lead">Hitta vägen till sneakers, vardagsplagg och accessoarer. Här får du en svensk överblick över kategorierna och konkreta råd för att jämföra passform, material och bilder innan du går vidare.</p>
+        <a class="button" href="https://www.cafans.com">Se katalogen på cafans.com <span aria-hidden="true">↗</span></a>
+        <p class="note">Oberoende kategoriguide. Länkarna leder till cafans.com; sidan är inte en officiell KakoBuy-tjänst eller ett nedladdningsbart kalkylblad.</p>
+      </div>
+      <figure>
+        <img
+          src="https://images.unsplash.com/photo-1695073621086-aa692bc32a3d?auto=format&amp;fit=crop&amp;w=960&amp;q=80"
+          srcset="https://images.unsplash.com/photo-1695073621086-aa692bc32a3d?auto=format&amp;fit=crop&amp;w=480&amp;q=75 480w, https://images.unsplash.com/photo-1695073621086-aa692bc32a3d?auto=format&amp;fit=crop&amp;w=960&amp;q=80 960w"
+          sizes="(max-width:600px) calc(100vw - 38px), 48vw"
+          width="960"
+          height="960"
+          fetchpriority="high"
+          loading="eager"
+          decoding="async"
+          alt="Vita Nike Air Force 1-sneakers arrangerade mot en röd bakgrund">
+        <figcaption>01 / Sport möter vardag. Inspirationsfoto: Sanju Pandita / Unsplash.</figcaption>
+      </figure>
+    </section>
+
+    <section class="intro" aria-labelledby="definition">
+      <h2 id="definition">Från produktlänk<br>till ett bättre val.</h2>
+      <p>En <strong>KakoBuy spreadsheet</strong> är en organiserad lista med produktlänkar som kan hjälpa dig att hitta och jämföra varor. Använd kategorierna som startpunkt och läs sedan den aktuella produktbeskrivningen. Ett namn eller en snygg bild säger mindre än tydliga mått, materialspecifikationer och begripliga köpvillkor.</p>
+    </section>
+
+    <section class="section deferred" aria-labelledby="inspiration">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Två sätt att bygga en garderob</p>
+          <h2 id="inspiration">Form, funktion och detaljer.</h2>
+        </div>
+        <p>För dig som söker KakoBuy finds: börja med vad du behöver och jämför sedan alternativen inom samma kategori.</p>
+      </div>
+      <div class="features">
+        <article class="feature">
+          <img
+            src="https://sneakerpolitics.com/cdn/shop/files/Sneaker-Politics-Jordan-1lowUniversityRed-Web-3.jpg?width=800"
+            width="800"
+            height="500"
+            loading="lazy"
+            decoding="async"
+            alt="Vita och röda Air Jordan 1 Low-sneakers på rött tyg">
+          <div class="feature-content">
+            <p class="eyebrow">Sneakers / Silhuett och passform</p>
+            <h3>Utgå från hur skon ska användas</h3>
+            <p>När du jämför Nike sneakers, kontrollera skornas storlekstabell, fotlängd i centimeter och utrymme vid tårna. För sneakers till vardagen spelar även sulans konstruktion och ovandelens material roll. En liknande silhuett behöver inte ge samma passform.</p>
+            <a href="https://cafans.com/category-911-Shoes.html">Utforska skor ↗</a>
+            <p class="caption">Bild: Sneaker Politics. Stilreferens, ingen lageruppgift.</p>
+          </div>
+        </article>
+        <article class="feature">
+          <img
+            src="https://yinoveluxe.com/cdn/shop/collections/hermes-kelly-28-epsom-leather-glint-624.webp?width=800"
+            width="800"
+            height="500"
+            loading="lazy"
+            decoding="async"
+            alt="Grupp av designerväskor med Hermès, Dior, Louis Vuitton, Gucci och Chanel">
+          <div class="feature-content">
+            <p class="eyebrow">Accessoarer / Proportion och material</p>
+            <h3>Låt detaljerna få en tydlig uppgift</h3>
+            <p>Louis Vuitton, Gucci, Hermès och Dior syns här som stilreferenser. Vid jämförelse av accessoarer i läder, titta på mått, foder och spännen. För smycken till vardagen bör materialet framgå tydligt; för huvudbonader är omkrets och justerbar passform användbara uppgifter.</p>
+            <a href="https://cafans.com/category-920-Accessories.html">Utforska accessoarer ↗</a>
+            <p class="caption">Bild: Yinové Luxe. Inspirationsbild, ingen utfästelse om äkthet eller tillgänglighet.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section deferred" aria-labelledby="guides-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Läs innan du väljer</p>
+          <h2 id="guides-title">Tre korta köpguider.</h2>
+        </div>
+        <p>Små kontroller som gör produktjämförelsen mer användbar.</p>
+      </div>
+      <div class="guides">
+        <article class="guide">
+          <span class="number" aria-hidden="true">01</span>
+          <h3>KakoBuy storleksguide: mått före bokstav</h3>
+          <p>En storleksbokstav räcker sällan som beslutsunderlag. Mät ett plagg du redan använder och jämför måtten med säljarens tabell. Kontrollera hur måtten har tagits. För skor är fotlängd och modellens storlekstabell en bättre utgångspunkt än enbart EU-numret.</p>
+          <ul>
+            <li>För en hoodie med rätt passform: jämför bröstvidd, längd och ärm.</li>
+            <li>För en T-shirt i bomull: kontrollera axelbredd, tygbeskrivning och tvättråd.</li>
+            <li>För byxor med rätt midjemått: läs även innerbenslängd och benvidd.</li>
+          </ul>
+        </article>
+        <article class="guide">
+          <span class="number" aria-hidden="true">02</span>
+          <h3>KakoBuy QC-guide: läs bilden i rätt ordning</h3>
+          <p>QC betyder kvalitetskontroll. Börja med att kontrollera att bilderna avser rätt vara och variant. Titta sedan på mått, sömmar, sulor och synliga skador. Be om en närbild om en viktig detalj är otydlig. En bild räcker inte för att fastställa äkthet.</p>
+          <ul>
+            <li>Vid granskning av QC-bilder: sök sammanhang och tydliga vinklar.</li>
+            <li>När du jämför produktbilder: skilj reklamfoto från bilder av ett enskilt exemplar.</li>
+            <li>För kontroll av sömmar: granska avslut, symmetri och lösa trådar.</li>
+          </ul>
+        </article>
+        <article class="guide">
+          <span class="number" aria-hidden="true">03</span>
+          <h3>KakoBuy köpguide: bedöm hela köpet</h3>
+          <p>Jämför samma variant, mängd och storlek. Skriv upp vad som ingår och vilka uppgifter som saknas. Varupris, frakt, eventuella tjänsteavgifter och tillämpliga skatter behöver bedömas tillsammans utifrån aktuella villkor.</p>
+          <ul>
+            <li>Vid jämförelse av material: läs fibersammansättningen, inte bara produktnamnet.</li>
+            <li>För jackor för lager på lager: lämna utrymme för plagget under.</li>
+            <li>Inför köp av matchande set: kontrollera överdelens och underdelens mått var för sig.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section deferred" aria-labelledby="checklist-title">
+      <p class="eyebrow">Spara som egen checklista</p>
+      <h2 id="checklist-title">Vad behöver du faktiskt veta?</h2>
+      <div class="table-wrap" role="region" aria-label="Jämförelsetabell för produktval" tabindex="0">
+        <table>
+          <caption>Kontrollpunkter för olika kategorier</caption>
+          <thead>
+            <tr>
+              <th scope="col">Kategori</th>
+              <th scope="col">Jämför först</th>
+              <th scope="col">Be om mer information när …</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Skor</th>
+              <td>Fotlängd, storlekstabell för sneakers och sulans konstruktion.</td>
+              <td>Storlekstabellen saknas eller modellens passform är oklar.</td>
+            </tr>
+            <tr>
+              <th scope="row">Huvtröjor och tröjor</th>
+              <td>Bröstvidd, plagglängd och material i huvtröjor.</td>
+              <td>Det inte framgår om måtten gäller ett plant liggande plagg.</td>
+            </tr>
+            <tr>
+              <th scope="row">T-shirts och matchtröjor</th>
+              <td>Axelbredd, tyg och detaljer på matchtröjor.</td>
+              <td>Tryckets placering eller tröjans längd inte syns tydligt.</td>
+            </tr>
+            <tr>
+              <th scope="row">Byxor och shorts</th>
+              <td>Midja, innerbensmått för byxor och benöppning.</td>
+              <td>Det är oklart hur mycket midjan kan justeras.</td>
+            </tr>
+            <tr>
+              <th scope="row">Huvudbonader</th>
+              <td>Omkrets, djup och storlek på kepsar.</td>
+              <td>Justeringsmöjligheterna inte anges.</td>
+            </tr>
+            <tr>
+              <th scope="row">Underkläder</th>
+              <td>Material i underkläder, storleksmått och relevanta köpvillkor.</td>
+              <td>Materialbeskrivning eller returvillkor saknas.</td>
+            </tr>
+            <tr>
+              <th scope="row">Accessoarer</th>
+              <td>Yttermått, angivet material och detaljer på spännen.</td>
+              <td>Material i smycken eller produktens mått är otydliga.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="reading" aria-labelledby="method-title">
+      <div>
+        <p class="eyebrow">En enkel metod</p>
+        <h2 id="method-title">Färre öppna flikar.<br>Tydligare jämförelser.</h2>
+        <p>Gör en kort egen lista när du använder en KakoBuy spreadsheet som inspiration. Spara originalets produktnamn och markera vilka uppgifter du har kontrollerat.</p>
+      </div>
+      <ol>
+        <li><strong>Välj behov.</strong> Börja med användning, kategori och önskad passform.</li>
+        <li><strong>Jämför underlag.</strong> Anteckna mått, material och vilken variant bilderna visar.</li>
+        <li><strong>Kontrollera villkor.</strong> Läs om betalning, frakt och returer där köpet genomförs.</li>
+        <li><strong>Öppna katalogen.</strong> Gå vidare till cafans.com för den aktuella produktinformationen.</li>
+      </ol>
+    </section>
+
+    <section class="section faq deferred" aria-labelledby="faq-title">
+      <div class="faq-intro">
+        <p class="eyebrow">Frågor och raka svar</p>
+        <h2 id="faq-title">Bra att veta<br>innan nästa klick.</h2>
+        <p>Guiden hjälper dig att ställa rätt frågor. Aktuell produktinformation och köpvillkor behöver kontrolleras på den sida där du går vidare.</p>
+      </div>
+      <div>
+        <details open>
+          <summary>Vad är en KakoBuy spreadsheet?</summary>
+          <p>En KakoBuy spreadsheet är en organiserad lista med produktlänkar som kan hjälpa dig att hitta och jämföra varor. Den här sidan är en svensk kategoriguide, inte ett nedladdningsbart kalkylblad. Kategorierna leder till cafans.com.</p>
+        </details>
+        <details>
+          <summary>Går länkarna direkt till KakoBuy?</summary>
+          <p>Nej. Kategorilänkarna öppnar respektive kategori på cafans.com. Övriga länkar går till https://www.cafans.com. Kontrollera produktinformationen och eventuella fortsatta köpsteg där.</p>
+        </details>
+        <details>
+          <summary>Hur väljer jag rätt storlek?</summary>
+          <p>Jämför säljarens mått med ett plagg du redan använder. För skor: mät fotlängden och läs modellens storlekstabell. Om mått saknas behöver du mer information innan du bestämmer dig.</p>
+        </details>
+        <details>
+          <summary>Är produktbilder samma sak som QC-bilder?</summary>
+          <p>Nej. Produktbilder visar hur en vara presenteras. QC-bilder bör visa det specifika exemplar som kontrollerats. Kontrollera bildens sammanhang och begär detaljer vid behov; bilder ensamma bevisar inte äkthet.</p>
+        </details>
+        <details>
+          <summary>Hur jämför jag den totala kostnaden?</summary>
+          <p>Jämför varupris, eventuella tjänsteavgifter, frakt och tillämpliga skatter eller importavgifter. Kontrollera aktuella villkor hos den tjänst du använder. Den här sidan visar inga priser eller leveranslöften.</p>
+        </details>
+        <details>
+          <summary>Är sidan officiellt kopplad till KakoBuy eller märkena?</summary>
+          <p>Nej. Detta är en oberoende informationssida. Varumärken nämns för identifiering och stilreferens. Bilderna är inspiration och intygar varken lagerstatus, äkthet eller tillgänglighet på cafans.com.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <div>
+        <p class="eyebrow">Välj din nästa kategori</p>
+        <h2 id="closing-title">Börja med något du behöver.</h2>
+      </div>
+      <a class="button" href="https://www.cafans.com">Utforska cafans.com <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <div class="footer-row">
+      <a href="https://www.cafans.com">cafans.com</a>
+      <span>KakoBuy spreadsheet · Svensk kategoriguide</span>
+    </div>
+    <p>Oberoende information utan officiell anknytning till KakoBuy, Nike, Louis Vuitton, Gucci, Hermès eller Dior. Inspirationsbilder visar stilreferenser och representerar inte verifierade produkter i destinationskatalogen. Kontrollera alltid produktuppgifter och villkor innan köp.</p>
+  </footer>
+</body>
+</html>
